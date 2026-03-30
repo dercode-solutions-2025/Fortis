@@ -13,6 +13,6 @@ C++23
 The code is so short because the kernel is essentially the shell's compiler.
 In summary, this is just a REPL for kernel bytecode. 
 */
-#include "../kernel.hpp"
+#include "../../kernel.hpp"
 // I made this at school and ran out of time, so for now repl() is empty.
 void repl() {}
