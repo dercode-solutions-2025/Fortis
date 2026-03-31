@@ -12,13 +12,14 @@ C++23
 
 In the future, I may add printing the compiled assembly, along with executing it of course.
 */
+#include "utils.hpp"
 #ifndef KERNEL_HPP
 #define KERNEL_HPP
 namespace kernel {
 
 
 void exec(char text[]) {
-    if(text == "exit") {
+    if(utils::strcmp(text, "exit", 4) == 0) {
         __asm__ volatile (
         "mov $60, %rax;"
         "mov $0, %rdi;"
